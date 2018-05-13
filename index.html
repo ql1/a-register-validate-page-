@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css"/>
+
+        </script>
+    </head>
+    <body>
+        <div class="wrap wrap-sm">
+            <div class="header">
+                <h1>注册</h1>
+            </div>
+            <div class="form">
+                <form id="signup">
+                    <div class="input-wrap">
+                        <lable>姓名</lable>
+<!-- 'pattern:"^[a-z0-9]$"|min:18|maxlength:10|minlength:2|required:false|numberic:false" type="text" class="input-control' -->
+                        <input data-rule='maxlength:10|minlength:1'
+
+                        type="text"
+                        name="name"
+                        class="input-control">
+                        <div id="name-input-error" class="input-error">姓名格式有误</div>
+                    </div>
+
+                    <div class="input-wrap">
+                        <lable>用户名</lable>
+<!-- 'pattern:"^[a-z0-9]$"|min:18|maxlength:10|minlength:2|required:false|numberic:false" type="text" class="input-control' -->
+                        <input data-rule='pattern:"^[a-z0-9]*$"|maxlength:18|minlength:4'
+
+                        type="text"
+                        name="username"
+                        class="input-control">
+                        <div id="username-input-error" class="input-error">用户名格式有误</div>
+                    </div>
+
+
+                    <div class="input-wrap">
+                        <lable>年龄</lable>
+<!-- 'pattern:"^[a-z0-9]$"|min:18|maxlength:10|minlength:2|required:false|numberic:false" type="text" class="input-control' -->
+                        <input data-rule='pattern:"^[0-9]*$"|max:100|min:16'
+
+                        type="text"
+                        name="age"
+                        class="input-control">
+                        <div id="age-input-error" class="input-error">年龄格式有误</div>
+                    </div>
+
+                    <div class="input-wrap">
+                        <lable>自我介绍</lable>
+<!-- 'pattern:"^[a-z0-9]$"|min:18|maxlength:10|minlength:2|required:false|numberic:false" type="text" class="input-control' -->
+                        <input data-rule='maxlength:100|required:false'
+
+                        type="text"
+                        name="intro"
+                        class="input-control">
+                        <div id="intro-input-error" class="input-error">自我介绍格式有误</div>
+                    </div>
+                    <div class="input-wrap">
+                        <lable>密码</lable>
+<!-- 'pattern:"^[a-z0-9]$"|min:18|maxlength:10|minlength:2|required:false|numberic:false" type="text" class="input-control' -->
+                        <input data-rule='pattern:"^[a-z0-9]*$"|maxlength:64|minlength:6'
+
+                        type="password"
+                        name="password"
+                        class="input-control">
+                        <div id="password-input-error" class="input-error">密码格式有误</div>
+                    </div>
+                    <button class="button-control" type="submit" name="button">注册</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="./js/jquery-3.0.0.min.js"></script>
+        <script src="js/validate.js"></script>
+        <script src="js/input.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- <script src="js/validate.js">
+        <script src="./js/main.js"> -->
+    </body>
+</html>
